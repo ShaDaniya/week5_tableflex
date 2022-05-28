@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page</title>
+    <style>
+        * {
+            text-align: center;
+        }
+
+        .header {
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            background: rgba(151, 149, 149, 0.5);
+        }
+
+        .main {
+            display: flex;
+            flex: 1;
+            background: rgb(195, 238, 195);
+        }
+
+        .mainmain {
+            display: inline-flex;
+            flex: 2;
+            flex-flow: row wrap;
+            justify-content: center;
+            background: rgb(246, 240, 196);
+        }
+
+        .item {
+            flex-grow: 1;
+            margin: 10px;
+            background: rgb(241, 214, 124);
+        }
+
+        .itemtwo {
+            flex-grow: 2;
+            flex-basis: 100%;
+            margin: 10px;
+            background: rgb(241, 214, 124);
+        }
+
+        .itemthree {
+            padding: 30px;
+            flex-grow: 2;
+            flex-basis: 100%;
+            margin: 10px;
+            background: rgb(246, 240, 196);
+        }
+
+        .footer {
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            background: rgba(151, 149, 149, 0.5);
+        }
+
+        p {
+            padding: 20px;
+            width: 20%;
+            background: rgb(246, 242, 237);
+        }
+
+        .body {
+            display: flex;
+            flex-flow: column;
+            min-height: 50vh;
+        }
+    </style>
+</head>
+
+<body class="body">
+    <header class="header">[Шапка страницы]</header>
+    <main class="main">
+        <section class="mainmain">
+            <h1 class="itemthree">[Основная часть]</h1>
+            <article class="item">[Еще 1]</article>
+            <article class="item">[Еще 2]</article>
+            <article class="itemtwo">[Еще 3]</article>
+        </section>
+        <aside class="main">[Боковая область]</aside>
+    </main>
+    <footer class="footer">
+        <p class="p">[Секция футера 1]</p>
+        <p class="p">[Секция футера 2]</p>
+        <p class="p">[Секция футера 3]</p>
+        <p class="p">[Секция футера 4]</p>
+    </footer>
+</body>
+
+</html>
